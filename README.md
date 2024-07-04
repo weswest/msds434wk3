@@ -40,4 +40,17 @@ sudo docker run -p 8080:8080 flask-dynamic-chart
 5. Click on the domain and you should be taken to the website in working order
 
 
-### 
+### GCP
+
+1. Search for cloud shell
+2. In shell:
+```
+gcloud projects list # lists all projects with an identifier
+gcloud config set project <project name with id>  # now the prompt is adjusted to the new project
+```
+3. Go to APIs and Services --> Enable APIs and Services.  Enable "App Engine Admin API"
+4. Back in the terminal, clone your github repo:
+```
+git clone https://github.com/weswest/msds434wk3
+gcloud app deploy app.yaml
+```
