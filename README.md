@@ -4,4 +4,15 @@ This is a toy project as part of the [MSDS-434 Data Science and Cloud Computing]
 
 We are supposed to create a toy web app and then host it using Amazon EC2 and Elastic Beanstalk, and then also host it on GCP GAE and GCP Cloud.
 
-Instructions:
+## Instructions:
+
+### Amazon EC2 Instance
+
+```
+# Launch an EC2 instance the way you normally do.  Get yourself into the terminal
+sudo apt update
+sudo apt-get install git
+git clone https://github.com/weswest/msds434wk3
+cd msds434wk3
+sudo snap install docker
+```
